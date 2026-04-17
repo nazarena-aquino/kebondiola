@@ -91,7 +91,7 @@ export default function App() {
 
   const sendOrder = () => {
     const lines = [
-      "✨ *PEDIDO — KEBIONDIOLA* ✨",
+      "✨ *PEDIDO — KEBONDIOLA* ✨",
       "━━━━━━━━━━━━━━━━━━━━",
       ""
     ];
