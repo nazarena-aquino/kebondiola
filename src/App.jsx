@@ -129,7 +129,7 @@ export default function App() {
         <div className="brand" onClick={() => setPage("menu")}>
           <img src="/logo.jpeg" alt="Kebiondiola Logo" className="logo-img" />
           <div className="brand-text">
-            <span className="title">KEBIONDIOLA</span>
+            <span className="title">KEBONDIOLA</span>
             <span className="slogan">el cerdo que te gusta</span>
           </div>
         </div>
