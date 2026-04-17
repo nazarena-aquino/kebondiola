@@ -112,8 +112,8 @@ button {
 }
 
 .logo-img { 
-  width: 75px; 
-  height: 75px; 
+  width: 65px; 
+  height: 65px; 
   border-radius: 50%; 
   object-fit: cover;
   border: 2px solid var(--gold-dark);
@@ -443,10 +443,11 @@ button {
   background: var(--surf);
   border: 1px solid var(--bord);
   border-radius: var(--radius);
-  padding: 20px 24px;
+  padding: 16px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 16px;
   box-shadow: var(--shadow-sm);
   transition: all 0.3s ease;
 }
@@ -456,42 +457,21 @@ button {
   transform: translateX(4px);
 }
 
-.cart-row-info {
-  flex: 1;
-  min-width: 0;
-}
-
 .item-name { 
   font-weight: 600; 
-  font-size: 18px; 
-  margin-bottom: 6px;
+  font-size: 15px;
   color: var(--text);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.item-qty-badge {
-  background: linear-gradient(135deg, var(--gold-dark), var(--gold));
-  color: var(--bg);
-  padding: 4px 10px;
-  border-radius: 8px;
-  font-size: 13px;
-  font-weight: 700;
-  font-family: 'Bebas Neue', sans-serif;
-  letter-spacing: 1px;
-}
-
-.item-desc { 
-  font-size: 13px; 
-  color: var(--mut); 
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .item-actions { 
   display: flex; 
   align-items: center; 
-  gap: 16px;
+  gap: 12px;
   flex-shrink: 0;
 }
 
@@ -864,6 +844,42 @@ button {
   
   .checkout-section h2 {
     font-size: 32px;
+  }
+  
+  .cart-row {
+    padding: 14px 16px;
+    gap: 12px;
+  }
+  
+  .item-name {
+    font-size: 14px;
+  }
+  
+  .item-actions {
+    gap: 10px;
+  }
+  
+  .cart-qty-controls {
+    padding: 2px;
+  }
+  
+  .cart-qty-btn {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .cart-qty-value {
+    font-size: 16px;
+    min-width: 24px;
+  }
+  
+  .item-price {
+    font-size: 18px;
+  }
+  
+  .btn-remove {
+    width: 28px;
+    height: 28px;
   }
   
   .toggle-group {

@@ -129,8 +129,8 @@ export default function App() {
         <div className="brand" onClick={() => setPage("menu")}>
           <img src="/logo.jpeg" alt="Kebiondiola Logo" className="logo-img" />
           <div className="brand-text">
-            <span className="title">KEBONDIOLA</span>
-            <span className="slogan">El cerdo que te gusta</span>
+            <span className="title">KEBIONDIOLA</span>
+            <span className="slogan">el cerdo que te gusta</span>
           </div>
         </div>
         <button className="cart-btn" onClick={() => setPage("cart")}>
@@ -210,12 +210,8 @@ export default function App() {
               <div className="cart-items">
                 {groupedCart.map((item) => (
                   <div key={item.id} className="cart-row">
-                    <div className="cart-row-info">
-                      <div className="item-name">
-                        {item.name}
-                        {item.quantity > 1 && <span className="item-qty-badge">x{item.quantity}</span>}
-                      </div>
-                      <div className="item-desc">{item.description}</div>
+                    <div className="item-name">
+                      {item.name}
                     </div>
                     <div className="item-actions">
                       <div className="cart-qty-controls">
