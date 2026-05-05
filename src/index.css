@@ -912,3 +912,99 @@ button {
 .cart-row {
   animation: fadeIn 0.3s ease forwards;
 }
+
+/* =============================================
+   ESTILOS RECALIBRADOS AL SISTEMA KEBONDIOLA
+   ============================================= */
+
+/* Badge de stock (¡¡ÚLTIMOS 1!!) - Usa el acento de la web */
+.stock-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.stock-badge--low {
+  background: var(--accent); /* Rojo de la marca */
+  color: var(--text);
+  box-shadow: 0 4px 15px rgba(139, 45, 45, 0.4);
+  animation: pulse-red 2s ease-in-out infinite;
+}
+
+@keyframes pulse-red {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+/* Banner de promo docena - Usa la gama del ORO */
+.promo-banner {
+  background: var(--surf2);
+  color: var(--gold);
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--gold-dark);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Bloque de precio - Mantiene el estilo dorado rústico */
+.price-block .price-hint {
+  font-size: 0.75rem;
+  color: var(--mut-light);
+  font-weight: 500;
+  font-family: 'Outfit', sans-serif;
+  text-transform: lowercase;
+}
+
+/* Alertas de docena - Estilo Rústico/Madera */
+.dozen-alert {
+  margin-top: 12px;
+  padding: 12px 16px;
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.4;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* ALERTA DE AVISO (¡Agregá 1 más...!) - Usa el color Muted/Oro Dark */
+.dozen-alert--tip {
+  background: var(--bg);
+  color: var(--mut-light);
+  border: 1px solid var(--bord);
+}
+
+/* ALERTA DE ÉXITO (¡Precio especial aplicado!) - Usa el Dorado Brillante */
+.dozen-alert--success {
+  background: var(--surf2);
+  color: var(--gold-light);
+  border: 1px solid var(--gold-dark);
+  box-shadow: var(--shadow-glow);
+}
+
+/* Tag de promo en el carrito - Mismo estilo que badge de carrito */
+.cart-promo-tag {
+  display: inline-block;
+  margin-left: 8px;
+  background: var(--accent);
+  color: var(--text);
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
